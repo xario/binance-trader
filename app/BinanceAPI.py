@@ -134,11 +134,14 @@ class BinanceAPI:
         params["symbol"] = market
         params["side"] = side
         params["quantity"] = '%.8f' % quantity
-        
+        print (params)
         return params
 
     def _format(self, price):
-        return "{:.8f}".format(price)
+        if float(price) < 0.1:
+            return "{:.6f}".format(price)
+        else:
+            return "{:.3f}".format(price)
             
     def _delete(self, path, params={}):
         params.update({"recvWindow": 120000})

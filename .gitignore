@@ -1,7 +1,6 @@
 
 # @yasinkuyu
 
-/app/config.py
 /db/orders.db
 
 **/env
@@ -9,3 +8,4 @@
 .pyc
 .DS_Store
 .gitignore
+.idea
