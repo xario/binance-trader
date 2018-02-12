@@ -138,7 +138,9 @@ class BinanceAPI:
         return params
 
     def _format(self, price):
-        if float(price) < 0.1:
+        if float(price < 0.001):
+            return "{:.8f}".format(price)
+        elif float(price) < 0.1:
             return "{:.6f}".format(price)
         else:
             return "{:.3f}".format(price)
