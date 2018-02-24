@@ -33,7 +33,7 @@ class Trading():
 
     # Define static vars
     WAIT_TIME_BUY_SELL = 1  # seconds
-    WAIT_TIME_CHECK_BUY = 0.5  # seconds
+    WAIT_TIME_CHECK_BUY = 2.5  # seconds
     WAIT_TIME_CHECK_SELL = 5  # seconds
     WAIT_TIME_CHECK_HOLD = 10  # seconds
     WAIT_TIME_STOP_LOSS = 20  # seconds
